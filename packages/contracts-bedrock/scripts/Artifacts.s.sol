@@ -57,7 +57,6 @@ abstract contract Artifacts {
         // is set. Great for loading addresses from `superchain-registry`.
         string memory addresses = Config.contractAddressesPath();
         if (bytes(addresses).length > 0) {
-            console.log("Loading addresses from %s", addresses);
             _loadAddresses(addresses);
         }
     }
